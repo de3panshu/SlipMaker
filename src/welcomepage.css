@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.mask{
+    -fx-background-color:rgba(24,24,24,.6);
+}
+.btn:hover
+{
+    -fx-background-color:red;
+}

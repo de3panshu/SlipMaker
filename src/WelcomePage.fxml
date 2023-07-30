@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXClippedPane?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<JFXClippedPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="690.0" stylesheets="@welcomepage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WelcomePageController">
+   <children>
+      <ImageView fx:id="bgImage" fitHeight="243.0" fitWidth="309.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@bgImage.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="mask" prefHeight="200.0" prefWidth="200.0" styleClass="mask" />
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="697.0" style="-fx-background-color: rgba(0,0,0,.6);;">
+         <children>
+            <Text fill="WHITE" layoutX="9.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNITED INTSTITUTE OF MANAGEMENT&#10;(Allahabad)" textAlignment="CENTER" wrappingWidth="678.13671875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Separator layoutX="39.0" layoutY="184.0" prefHeight="0.0" prefWidth="628.0" style="-fx-border-color: white; -fx-background-color: white;" />
+            <Text fill="WHITE" layoutX="41.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To" wrappingWidth="290.13671875">
+               <font>
+                  <Font size="51.0" />
+               </font>
+            </Text>
+            <Text fill="#11ff00" layoutX="56.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Label Maker" textAlignment="CENTER" wrappingWidth="259.13671875">
+               <font>
+                  <Font name="Cambria" size="35.0" />
+               </font>
+            </Text>
+            <Separator layoutX="346.0" layoutY="271.0" orientation="VERTICAL" prefHeight="200.0" />
+            <JFXButton buttonType="RAISED" contentDisplay="RIGHT" graphicTextGap="15.0" layoutX="384.0" layoutY="337.0" onAction="#startButtonActionEvent" prefHeight="68.0" prefWidth="229.0" style="-fx-background-color: lightgreen; -fx-border-radius: 30px; -fx-background-radius: 30px; -fx-font-size: 28px;" styleClass=".btn" text="START">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="42" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</JFXClippedPane>
